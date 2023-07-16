@@ -1,0 +1,67 @@
+.button {
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 5px;
+    border: 2px solid;
+    border-radius: 10px;
+    transition: 0.25s;
+    margin-right: 15px;
+    box-shadow: 0 0 10px 0;
+}
+
+.button:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    transform: translateY(-0.25em);
+    cursor: grab;
+    transition: 0.25s;
+}
+
+.button:active {
+    transform: translateY(2px);
+    cursor: grabbing;
+    transition: 0.25s;
+}
+
+.kube-button {
+    background-color: green;
+    color: lightgreen;
+    border-color: lightgreen;
+    box-shadow: 0 0 10px 0 lightgreen;
+}
+
+.fake-button {
+    background-color: red;
+    color: lightpink;
+    border-color: lightpink;
+}
+
+.hint-button {
+    background-color: saddlebrown;
+    color: yellow;
+    font-weight: lighter;
+    border-color: yellow;
+    font-size: large;
+}
+
+.hint-button .lightbulb {
+    content: url("../resources/lightbulb.png");
+    float: left;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.hint-button.hidden {
+    display: none;
+    animation: fadeOut 0.5s;
+}
+
+.next-word-button {
+    background-color: midnightblue;
+    color: lightblue;
+    font-weight: bold;
+    border-color: lightblue;
+    border-width: 1px;
+    margin-top: 25px;
+}

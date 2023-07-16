@@ -1,0 +1,24 @@
+#instructions {
+    display: block;
+    font-family: "Poppins", sans-serif;
+    font-size: medium;
+    text-align: center;
+    color: whitesmoke;
+    width: 75%;
+    margin: auto;
+}
+
+#instructions.hidden {
+    display: none;
+    animation: fadeOut 0.5s;
+}
+
+.ready-button {
+    margin: 15px auto auto;
+    text-align: center;
+    font-size: large;
+    color: whitesmoke;
+    background-color: black;
+    border-color: #008cba;
+    box-shadow: 0 0 10px 0 #008cba;
+}

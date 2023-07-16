@@ -1,0 +1,104 @@
+@import "share.css";
+
+#game-result {
+    display: none;
+    color: whitesmoke;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin: 10px auto;
+}
+
+#game-result.visible {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+#intermediate-result {
+    display: block;
+}
+
+#intermediate-result.hidden {
+    display: none;
+    animation: faedOut 0.5s;
+}
+
+#result {
+    font-weight: bolder;
+    font-size: xx-large;
+    text-shadow: 0 0 15px;
+}
+
+#result.correct {
+    color: lightgreen;
+}
+
+#result.wrong {
+    color: lightpink;
+}
+
+#verdict {
+    font-weight: lighter;
+    font-size: large;
+    max-width: 75%;
+    margin: auto;
+}
+
+#next-word.hidden {
+    display: none;
+}
+
+#post-game {
+    clear: both;
+    text-align: center;
+    width: auto;
+    display: inline-block;
+    animation: fadeIn 0.5s;
+}
+
+#post-game.hidden {
+    display: none;
+}
+
+#score {
+    font-size: x-large;
+    font-weight: bolder;
+    text-shadow: 0 0 15px;
+    padding-bottom: 15px;
+}
+
+#score-response {
+    padding-bottom: 25px;
+    margin: auto;
+    width: 75%
+}
+
+.play-again {
+    margin: 25px auto;
+    background-color: midnightblue;
+    font-family: "Poppins", sans-serif;
+    color: lightblue;
+    font-weight: normal;
+    padding: 5px;
+    border: lightblue 1.5px solid;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+
+.play-again .icon {
+    content: url("../resources/repeat.png");
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.play-again:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    transform: translateY(-0.25em);
+    cursor: grab;
+}
+
+.play-again:active {
+    transform: translateY(2px);
+    cursor: grabbing;
+}

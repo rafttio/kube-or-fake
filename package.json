@@ -1,0 +1,7 @@
+{
+  "name": "kube-or-fake",
+  "version": "1.0.0",
+  "main": "scripts/main.js",
+  "author": "raftt.io",
+  "license": "ISC"
+}

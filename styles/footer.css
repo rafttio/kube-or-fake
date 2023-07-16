@@ -1,0 +1,42 @@
+#footer {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    color: whitesmoke;
+    font-weight: lighter;
+    font-size: smaller;
+    margin-top: 50px;
+}
+
+#footer a:link, #footer a:visited {
+    color: whitesmoke;
+}
+
+#footer a:hover {
+    color: lightskyblue;
+}
+
+.github-link {
+    text-align: center;
+    transition: .5s;
+    border-radius: 50%;
+}
+
+.github-link:before {
+    display: block;
+    content: '';
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+}
+
+.github-link:hover:before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #008cba;
+}
+
+.github-link:hover {
+    color: #008cba;
+    box-shadow: 0 0 15px #008cba;
+    text-shadow: 0 0 15px #008cba;
+}
+

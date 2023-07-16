@@ -1,0 +1,16 @@
+body {
+    background-image: url("../resources/cloud-wallpaper.jpg");
+    background-size: cover;
+    max-width: 100%;
+}
+
+#game-title {
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+.game-title-image {
+    max-width: 50%;
+}
