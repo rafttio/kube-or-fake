@@ -1,0 +1,34 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  OpenAILambdaLayer:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      LayerName: openai
+      ContentUri: libs
+  GenerateKubernetesTermFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Environment:
+        Variables:
+          OPENAI_API_KEY: << replace >>
+          OPENAI_MODEL_NAME: << replace >>
+      CodeUri: lambda/
+      Handler: lambda.lambda_handler
+      Runtime: python3.10
+      Timeout: 10
+      Events:
+        GenerateTerm:
+          Type: Api
+          Properties:
+            Path: /generate
+            Method: get
+      Layers:
+        - !Ref OpenAILambdaLayer
+
+Outputs:
+  GenerateKubernetesTermFunction:
+    Value: !GetAtt GenerateKubernetesTermFunction.Arn
+  GenerateKubernetesTermFunctionIAMRole:
+    Value: !GetAtt GenerateKubernetesTermFunctionRole.Arn
