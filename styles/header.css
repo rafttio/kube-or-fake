@@ -1,5 +1,6 @@
 body {
     background-image: url("../resources/cloud-wallpaper.jpg");
+    background-color: black;
     background-size: cover;
     max-width: 100%;
 }
