@@ -8,6 +8,7 @@ async function start() {
 window.onresize = function () {
     const img = document.getElementById("game-title-image");
     img.style.maxWidth = "800px";
+    img.style.width = "80%";
 }
 
 document.getElementById("instructions").addEventListener("click", async (e) => {
