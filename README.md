@@ -1,4 +1,4 @@
-![Kube or Fake?](resources/kubeOrFake.gif)
+![Kube or Fake?](resources/kube-or-fake.gif)
 
 ---
 
